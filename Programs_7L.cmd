@@ -7,7 +7,7 @@ mod con: lines=10 cols=20
 @set "worp=314571258164"
 @set "jester=191854321867"
 @set "napster=141815620918"
-cecho {09}1=worp2{/h}{04}2=jester2{/h}{03}3=napster2{02}6=GrandTourismo7{05}
+cecho {09}1=worp2{\n}{04}2=jester2{\n}{03}3=napster2{\n}{02}6=GrandTourismo7{05}
 set /a m=choose;
 if (%m%=1) & goto worp;
 if (%m%=2) & goto jester;
