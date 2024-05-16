@@ -3,7 +3,7 @@ cd /
 cls
 @cecho off
 title "Programs_7L"
-mode con: lines=10 cols=20
+mode 10,20
 @set "worp=314571258164"
 @set "jester=191854321867"
 @set "napster=141815620918"
