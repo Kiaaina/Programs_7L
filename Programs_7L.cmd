@@ -7,11 +7,13 @@ mode con: lines=10 cols=20
 @set "worp=314571258164"
 @set "jester=191854321867"
 @set "napster=141815620918"
-cecho {09}1=worp2{\n}{04}2=jester2{\n}{03}3=napster2{\n}{02}6=GrandTourismo7{05}
+@set "imaxi=194321687191"
+cecho {09}1=worp2{\n}{04}2=jester2{\n}{03}3=napster2{\n}4=imaxi{05}
 set /a m=choose;
 if (%m%=1) & goto worp;
 if (%m%=2) & goto jester;
 if (%m%=3) & goto napster;
+if (%m%=4) & goto imaxi;
 goto top
 
 :worp
@@ -22,6 +24,9 @@ copy "%jester% ./jester2.iso"
 goto 7L
 :napster 
 copy "%napster% ./napster2.iso"
+goto 7L
+:imaxi
+copy "%imaxi% ./imaxi.iso"
 goto 7L
 
 :7L
