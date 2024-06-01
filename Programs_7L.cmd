@@ -11,10 +11,10 @@ mode 10,20
 @set "imaxi=194321687191"
 %cecho% {09}1=worp2{\n}{04}2=jester2{\n}{03}3=napster2{\n}4=imaxi{05}
 set /p m=choose;
-if (%m%=1) goto worp;
-if (%m%=2) goto jester;
-if (%m%=3) goto napster;
-if (%m%=4) goto imaxi;
+if %m%==1 goto worp;
+if %m%==2 goto jester;
+if %m%==3 goto napster;
+if %m%==4 goto imaxi;
 goto top
 
 :worp
